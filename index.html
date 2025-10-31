@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO-NOW | 2030을 위한 경제 뉴스</title>
+    <style>
+        /* Google Fonts Import */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+        /* 기본 스타일 초기화 */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.7;
+            background-color: #f8f9fa;
+            color: #212529;
+            word-break: keep-all; /* 단어 단위로 줄바꿈 */
+        }
+
+        /* 전체 레이아웃 */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #000;
+        }
+        
+        header p {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        /* 네비게이션 스타일 */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        /* 메인 콘텐츠 스타일 */
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* 뉴스 카드 스타일 */
+        .news-card {
+            background-color: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .news-card .img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .news-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            color: #495057;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .news-content a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            align-self: flex-start; /* 링크를 카드 하단에 위치 */
+            transition: color 0.3s;
+        }
+
+        .news-content a:hover {
+            color: #0056b3;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px 0;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ECO-NOW</h1>
+            <p>2030 청년들을 위한 경제 소식, 지금 바로 만나보세요.</p>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">최신 뉴스</a></li>
+                    <li><a href="#">경제 정책</a></li>
+                    <li><a href="#">금융/투자</a></li>
+                    <li><a href="#">IT/과학</a></li>
+                    <li><a href="#">코인</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="news-card">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/6044230/pexels-photo-6044230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="핵심광물 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>정부, 2030년 전략핵심광물 재자원화율 20% 목표</h2>
+                    <p>정부가 2030년까지 리튬·니켈·코발트 등 10대 전략 핵심광물의 재자원화율을 20%까지 끌어올린다는 목표를 세웠습니다.</p>
+                    <a href="https://www.asiae.co.kr/article/2025103110190543661" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AI와 일자리 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>AI가 청년 일자리 줄이고 장년층 고용은 늘렸다</h2>
+                    <p>인공지능(AI) 도입 영향으로 고용 시장에서 청년 고용은 줄고 장년층 고용은 증가하는 세대별 격차가 나타났다는 분석이 나왔습니다.</p>
+                    <a href="https://www.hani.co.kr/arti/economy/economy_general/1126425.html" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                 <div class="img-container">
+                    <img src="https://images.pexels.com/photos/7947933/pexels-photo-7947933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="청년 부채 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>돈 많이 버는 울산 청년, 빚도 많다</h2>
+                    <p>울산 청년의 소득 수준이 동남권에서 가장 높은 가운데 부채 규모 역시 가장 빠르게 늘어나며 '고소득·고부채 구조'가 나타나고 있습니다.</p>
+                    <a href="http://www.iusm.co.kr/news/articleView.html?idxno=1055531" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                 <div class="img-container">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="금융 교육 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>우리금융, 자립준비청년 경제 자립 금융교육 진행</h2>
+                    <p>우리금융그룹 우리금융미래재단은 자립준비청년들을 위한 금융교육 특강을 진행하여 이들의 경제적 자립을 돕고 있습니다.</p>
+                    <a href="http://www.lcnews.co.kr/news/articleView.html?idxno=48895" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/4386433/pexels-photo-4386433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="절약 챌린지 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>극단적 절약하는 中 2030…'무소비 챌린지' 확산</h2>
+                    <p>중국 젊은 세대 사이에서 고용 불안과 경기 침체로 인해 극단적인 절약과 '무소비 챌린지'와 같은 새로운 생존 전략이 확산되고 있습니다.</p>
+                    <a href="https://www.hankyung.com/article/2025103174547" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="img-container">
+                    <img src="https://images.pexels.com/photos/5929471/pexels-photo-5929471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="주식 시장 이미지">
+                </div>
+                <div class="news-content">
+                    <h2>[한경에세이] 4000P 앞의 청년</h2>
+                    <p>코스피 지수가 4000을 향해 가지만, 청년층은 일자리와 주거 문제로 여전히 어려움을 겪고 있으며, 이러한 불균형은 구조적 위기의 신호일 수 있습니다.</p>
+                    <a href="https://www.hankyung.com/article/2025103061211" target="_blank">기사 전문 보기 &rarr;</a>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 ECO-NOW. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
